@@ -1,0 +1,15 @@
+	.ORIG x3000
+
+	AND R1,R1,0
+	AND R2,R2,0
+	ADD R1,R1,9
+	ADD R2,R2,15
+	cmp R1, R2
+	jg GREATER
+	
+	HALT
+
+carzero: .FILL x30
+msg1: .STRINGZ "Z"
+	.END 
+
